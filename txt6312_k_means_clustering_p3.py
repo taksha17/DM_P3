@@ -75,3 +75,22 @@ plt.ylabel('Error')
 plt.xticks(range(2, 11))  # Set x-axis ticks to match the range of K values
 plt.grid(True)
 plt.show()
+
+
+# -Script Goal: This script implements the k-means clustering algorithm without the use of pre-built library functions.
+# - To use, enter the command 'python k_means_cluster.py' in the terminal.
+# - Counter-arguments:
+#   - '': The file path to the dataset, which should be in text format.
+# - Usefulness:
+#   - Groups data points based on (K ) values ranging from 2 to 10.
+#   - Calculates clustering error using Euclidean distance.
+#   - Runs 20 centroid recalculation iterations for each (K).
+# - Random State: Makes use of a fixed random seed to ensure reproducibility of results.
+# - Results:
+#   - After the final iteration, prints the error for each (K).
+#   - Shows an Error vs. (K ) plot to visualize performance.
+# - Data Format: Assumes the data file's last column is the class label and excludes it from features.
+# - Prerequisites: The'matplotlib' library is required for plotting.
+# Author Github Link : https://github.com/taksha17/DM_P3
+# Author : Taksha Sachin Thosani
+# Student Id : 1002086312
